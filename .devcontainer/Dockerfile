@@ -17,7 +17,7 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | d
     && apt-get install -y gh
 
 # Download and install Supabase CLI
-RUN curl -L -o supabase.deb "https://github.com/supabase/cli/releases/download/v1.190.0/supabase_1.190.0_linux_amd64.deb" \
+RUN curl -L -o supabase.deb "https://github.com/supabase/cli/releases/download/v1.191.3/supabase_1.191.3_linux_amd64.deb" \
     && dpkg -i supabase.deb \
     && rm supabase.deb
 

@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 import { OpenAIStream, StreamingTextResponse } from 'ai';
-import { codeBlock } from 'common-tags';
-import OpenAI from 'openai';
+import { codeBlock } from 'https://esm.sh/common-tags@1.8.2';
+import OpenAI from 'https://esm.sh/openai@4.10.0';
 import { Database } from '../_lib/database.ts';
 
 const openai = new OpenAI({
