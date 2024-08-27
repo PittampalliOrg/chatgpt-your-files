@@ -116,7 +116,7 @@ Deno.serve(async (req) => {
     ];
 
   const completionStream = await openai.chat.completions.create({
-    model: 'gpt-4o',
+    model: 'gpt-4',
     messages: completionMessages,
     max_tokens: 1024,
     temperature: 0,
