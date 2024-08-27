@@ -10,7 +10,7 @@ import { useRouter } from 'next/navigation';
 export default function FilesPage() {
   const supabase = createClientComponentClient<Database>();
   const router = useRouter();
-
+  
   const { data: documents } = useQuery(['files'], async () => {
     const { data, error } = await supabase
       .from('documents_with_storage_path')

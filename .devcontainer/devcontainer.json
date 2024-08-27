@@ -1,0 +1,29 @@
+{
+    "name": "Supabase Backend",
+    // "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "editor.tabSize": 2
+        },
+        "extensions": [
+            "vscode.typescript-language-features",
+            "GitHub.copilot",
+            "denoland.vscode-deno",
+            "Supabase.vscode-supabase-extension",
+            "ms-azuretools.vscode-docker",
+            "dbaeumer.vscode-eslint",
+            "Postman.postman-for-vscode",
+            "ms-edgedevtools.vscode-edge-devtools",
+            "tamasfe.even-better-toml"
+        ]
+      }
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:latest": {}, // Install Docker CLI
+      "ghcr.io/devcontainers-contrib/features/deno:latest": {} // Install Deno
+    }
+  } 
